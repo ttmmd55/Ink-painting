@@ -4,7 +4,7 @@
   let amt
 
 function setup() {
-  createCanvas(600, 400);
+ createCanvas(windowWidth, windowHeight);
   
   //draw a background not be loop
   background(240);
@@ -33,4 +33,10 @@ function mousePressed(){
   x=mouseX;
   y=mouseY;
   amt=(2,20);
+}
+
+function windowResized() {
+
+  resizeCanvas(windowWidth, windowHeight);
+
 }
